@@ -5,31 +5,7 @@
 	<groupId>technology.minecraft</groupId>
 	<artifactId>pubproxylib</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<version>1.8</version>
-				<executions>
-					<execution>
-						<phase>test</phase>
-						<goals>
-							<goal>run</goal>
-						</goals>
-						<configuration>
-							<tasks>
-								<echo>Using env.test.properties</echo>
-								<copy file="libs\MinecraftTechnology\ProxyLibDoc\0.10\ProxyLibDoc-0.10.jar"
-									tofile="${basedir}/target/pubproxylib-0.0.1-SNAPSHOT-javadoc.jar" />
-							</tasks>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			
-		</plugins>
-	</build>
+
 	<repositories>
 		<repository>
 			<id>in-project</id>
@@ -38,11 +14,6 @@
 		</repository>
 	</repositories>
 	<dependencies>
-		<dependency>
-			<groupId>MinecraftTechnology</groupId>
-			<artifactId>ProxyLib</artifactId>
-			<version>0.10</version>
-		</dependency>
 		<dependency>
 			<groupId>MinecraftTechnology</groupId>
 			<artifactId>ProxyLib</artifactId>
